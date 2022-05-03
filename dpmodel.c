@@ -1712,6 +1712,7 @@ int sc_scene(void)
 			fprintf(qcheaderfile, "\n");
 		}
 	}
+	while (gettoken()[0] != '\n');
 	if (!parsemodelfile())
 		return 0;
 	free(modelfile);
